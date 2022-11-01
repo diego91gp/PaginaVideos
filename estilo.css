@@ -5,23 +5,22 @@
 }
 
 body {
-
-    width: 100%;
-}
-#vista1{
     
-width: 80%;
-height: 80%;
-
+    background-color: rgba(77, 73, 73, 0.966) ;
+    min-width: 100%;
+    height: 100%;
+    
 }
+
 header {
+    display:inline-block;
     position:fixed;
     padding-left: 10px;
     width: 100%;
     height: 110px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 5em;
-    background-color: rgba(255, 255, 255, 0.966) ;
+    background-color: rgba(77, 73, 73, 0.966) ;
     z-index:1;
 }
 
@@ -40,7 +39,25 @@ ul {
     display: table;
     table-layout: fixed;
 }
+video {
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px 7px rgba(0,0,0,0.75);
+  
 
+  }
+ 
+  h2{
+    margin: 10px 0;
+    color:#D7263D;
+    text-decoration: underline #D7263D;
+    font-size: 50px;
+    
+
+
+  }
 li {
     padding-top: 15px;
     vertical-align: center;
@@ -59,45 +76,58 @@ li:hover {
 .container {
     position:relative;
     top:120px;
-    padding-top: 50px;
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 20px;
     display: table;
-    
+    table-layout:auto;
     width: 100%;
-
+   
 }
 
 .vista {
-    border-right: solid #D7263D;
+    
     vertical-align: top;
-    width: 70%;
-    text-align: center;
+    width: 75%;
     display: table-cell;
+    padding-right: 20px;
+    min-width: 500px;
+    color: white;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   line-height: 40px;
+   
 }
 
 .videos {
-    border: solid black;
-    width: 100%;
-    height: 1000px;
-    display: table;
-    padding: 5px;
+    
+    vertical-align: center;
+    display: table-cell;
+    
 }
 
 .select {
-    height: 200px;
-    border: solid black;
-    width: 100%;
-    display: table-row;
+    display: table;
+    table-layout:fixed;
+    margin:auto;
+   padding: 20px;
+   
+    
 }
 
 .imagen{
+    padding:5px;
     vertical-align: middle;
-    width: 70%;
-    display:table-cell;
-    border: solid black;
+    display:table-row;
+    
 }
 
 .texto{
+    display:table-row;
     vertical-align: middle;
-    width: 30%;
-    display:table-cell;
+    text-align: center;
+    color: #B71C1C;
+    font-size: 26px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
