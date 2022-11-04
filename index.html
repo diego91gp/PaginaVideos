@@ -5,16 +5,19 @@
     <title>WILDFLIX</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link href="estilo.css" rel="stylesheet">
 </head>
 
 <body id="top">
-    <header >
-        <img src="media/head.png" alt="wildflix">
+    <header>
+        <img id="wild" src="media/head.png" alt="wildflix">
 
 
     </header>
-    <nav >
+    <nav>
         <ul>
             <li>Sabana</li>
             <li>Jungla</li>
@@ -23,105 +26,105 @@
             <li>Aire</li>
 
         </ul>
-    </nav >
-    <div class="container" >
+    </nav>
+    <div class="container">
 
         <div class="vista" id="videoPrinc">
-            <video id="vista1" width="1500px" height="250px" controls id="princi">
-                <source src="media/Lobo.mp4" type="video/mp4">
-            </video>
-            <h2>Lobo</h2>
-            <span><br>El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El
-                perro
-                doméstico (Canis familiaris) se considera miembro de la misma especie según distintos indicios, la
-                secuencia del ADN y otros estudios genéticos.<br><br>
-
-                Sin embargo, desde 1758 se consideró una especie distinta por el biólogo Carl Linneaus en la décima
-                edición de Systema naturæ.
-                El primer registro fósil data de hace ochocientos mil años.
-                Antaño los lobos fueron abundantes y se distribuían por
-                Norteamérica y Eurasia. No obstante, por una serie de razones relacionadas con el hombre, los lobos
-                habitan únicamente en una muy limitada porción del que antes fue su territorio.<br><br>
-
-                Aunque está clasificada como una especie poco amenazada de extinción en algunas regiones, incluyendo la
-                parte continental de los Estados Unidos de América, la especie está listada como en peligro o amenazada.
-                Los lobos son cazados en muchas áreas del mundo por la amenaza que representan para el ganado, así como
-                por deporte.</span>
+            <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/Lobo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+            <div id="d1">
+                <span id="s1">
+                    <h2>Lobo</h2>
+                    El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El
+                    perro
+                    doméstico (Canis familiaris) se considera miembro de la misma especie según distintos indicios, la
+                    secuencia del ADN y otros estudios genéticos.<br>
+    
+                    Sin embargo, desde 1758 se consideró una especie distinta por el biólogo Carl Linneaus en la décima
+                    edición de Systema naturæ.
+                    El primer registro fósil data de hace ochocientos mil años.
+                    Antaño los lobos fueron abundantes y se distribuían por
+                    Norteamérica y Eurasia. No obstante, por una serie de razones relacionadas con el hombre, los lobos
+                    habitan únicamente en una muy limitada porción del que antes fue su territorio.<br>
+    
+                    Aunque está clasificada como una especie poco amenazada de extinción en algunas regiones, incluyendo la
+                    parte continental de los Estados Unidos de América, la especie está listada como en peligro o amenazada.
+                    Los lobos son cazados en muchas áreas del mundo por la amenaza que representan para el ganado, así como
+                    por deporte.</span>
+            </div>
+            
+            </div>
         </div>
         <div class="videos">
-            <div class="select" id="jirafa">
-                <div class="imagen">
+            <div class="select">
+                <h4>Video Jirafa</h4>
+                <div class="imagen" >
 
-                    <img class="vprevia" width="200px" src="media/jirafa.png" alt="jirafa">
-                   
-                </div>
-                <div class="texto">
-                    <p>Jirafa de la sabana
-                    </p>
-                </div>
-            </div>
-            <div class="select" id="cisne">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/cisne.png" alt="">
-                </div>
-                <div class="texto">
-                    Cisnes en lago
+                    <img class="vprevia" id="jirafa" width="150px" src="media/jirafa.png" alt="jirafa">
 
                 </div>
-            </div>
-            <div class="select" id="rana">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/rana.png" alt="">
-                </div>
                 <div class="texto">
-                    <p>Rana en roca
-                    </p>
+                    <span>La jirafa (Giraffa camelopardalis) es una especie de mamífero artiodáctilo, de la familia
+                        Giraffidae propio de África.</span>
                 </div>
             </div>
-            <div class="select" id="lagarto">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/lagarto.png" alt="">
+
+            <div class="select">
+                <h4>Video rana</h4>
+                <div class="imagen" >
+                    <img class="vprevia" id="rana" width="150px" src="media/rana.png" alt="">
                 </div>
                 <div class="texto">
-                    <p>Lagarto en rama
-                    </p>
+                    <span>Rana es un género de anfibios anuros de la familia Ranidae, que habita en Eurasia templada
+                        hasta Indochina.</span>
                 </div>
             </div>
-            </div><div class="videos">
-            <div class="select" id="loro">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/loro.png" alt="">
+            <div class="select">
+                <h4>Video lagarto</h4>
+                <div class="imagen" >
+                    <img class="vprevia" id="lagarto" width="150px" src="media/lagarto.png" alt="">
                 </div>
                 <div class="texto">
-                    <p>Loro de la selva
-                    </p>
+                    <span>Los lacertilios o lagartos (Lacertilia) son un grupo parafilético de escamosos que incluye la
+                        mayoría de los escamosos actuales, como varanos, iguanas, coritofánidos, camaleones, lagartijas
+                        y geckos</span>
                 </div>
             </div>
-            <div class="select" id="ronin">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/ronin.png" alt="">
+
+            <div class="select">
+                <h4>Video loro</h4>
+                <div class="imagen" >
+                    <img class="vprevia"  id="loro" width="150px" src="media/loro.png" alt="">
                 </div>
                 <div class="texto">
-                    <p>Ronin
-                    </p>
+                    <span>Los loros típicos (Psittacoidea) son una superfamilia del orden Psittaciformes, con un total
+                        de 369 especies.</span>
                 </div>
             </div>
-            <div class="select" id="ciervo">
-                <div class="imagen">
-                    <img class="vprevia" width="200px" src="media/ciervos.png" alt="" >
+            <div class="select">
+                <h4>Video petirrojo</h4>
+                <div class="imagen" >
+                    <img class="vprevia" id="ronin" width="150px" src="media/ronin.png" alt="">
                 </div>
                 <div class="texto">
-                    <p>Ciervos
-                    </p>
+                    <span> El petirrojo europeo(Erithacus rubecula) es una especie de ave paseriforme de la familia
+                        Muscicapidae.</span>
                 </div>
             </div>
-            <div class="select" id="lobo">
-                <div class="imagen" a href=".">
-                    <img class="vprevia" width="200px" src="media/lobo.png" alt="">
+
+            <div class="select">
+                <h4>Video lobo</h4>
+                <div class="imagen" a href="." >
+                    <img id="lobo" class="vprevia" width="150px" src="media/lobo.png" alt="">
                 </div>
                 <div class="texto">
-                    <p>Lobo en bosque
-                    </p>
+                    <span>El lobo es una especie de mamífero placentario del orden de los carnívoros. El perro doméstico
+                        se considera miembro de la misma especie según distintos indicios</span>
                 </div>
             </div>
 
@@ -131,7 +134,7 @@
 <script>
     window.onload = function () {
         const princip = document.querySelector("#videoPrinc")
-        const imagen = document.querySelectorAll(".select");
+        const imagen = document.querySelectorAll(".vprevia");
         for (const im of imagen) {
             im.addEventListener("click", cambia);
 
@@ -139,9 +142,12 @@
         function cambia() {
             switch (this.getAttribute("id")) {
                 case ("rana"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
+                    princip.innerHTML = `         
+                    <div class="contvis">
+                        <div id="vista1"><video width="2000px" height="250px" controls id="princi">
                 <source src="media/rana.mp4" type="video/mp4">
-            </video>
+            </video></div>
+            <div id="d1">
             <h2>Rana</h2>
             <span >Rana es un género de anfibios anuros de la familia Ranidae, que habita en Eurasia templada hasta Indochina.
                 Las especies de este género se caracterizan por sus cinturas delgadas y la piel rugosa, muchas poseen finas estrías que recorren la espalda aunque sin las verrugas típicas de los sapos. 
@@ -149,118 +155,140 @@
                 Suelen ser de color verde o marrón con manchas negras y amarillentas por el dorso y más pálidas por el vientre.<br><br>
                 Muchas de las ranas de este género crían a principio del verano, aunque las especies tropicales y subtropicales lo hacen durante todo el año.
                 Los machos de la mayoría de las especies croan pero se cree que los de unas pocas son mudos. Las hembras desovan formando grandes masas o agregados globulares, alcanzando puestas de hasta veinte mil huevos.</span>
+                </div>
+                </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
                 case ("lobo"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/Lobo.mp4" type="video/mp4">
-            </video>
-            <h2>Lobo</h2>
-            <span>El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El
-                perro
-                doméstico (Canis familiaris) se considera miembro de la misma especie según distintos indicios, la
-                secuencia del ADN y otros estudios genéticos.<br><br>
-                Sin embargo, desde 1758 se consideró una especie distinta por el biólogo Carl Linneaus en la décima
-                edición de Systema naturæ.
-                El primer registro fósil data de hace ochocientos mil años.
-                Antaño los lobos fueron abundantes y se distribuían por
-                Norteamérica y Eurasia. No obstante, por una serie de razones relacionadas con el hombre, los lobos
-                habitan únicamente en una muy limitada porción del que antes fue su territorio.<br><br>
-                Aunque está clasificada como una especie poco amenazada de extinción en algunas regiones, incluyendo la
-                parte continental de los Estados Unidos de América, la especie está listada como en peligro o amenazada.
-                Los lobos son cazados en muchas áreas del mundo por la amenaza que representan para el ganado, así como
-                por deporte.</span>
-            `;
-            window.location.href = '#top'
-                    break;
-                case ("ciervo"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/ciervo.mp4" type="video/mp4">
-            </video>
-            <h2>Ciervos del norte</h2>
-            <span >El uapití, wapití o ciervo canadiense (Cervus canadensis) es una especie de mamífero artiodáctilo de la familia de los cérvidos que vive en América del Norte, Asia central y oriental. 
-                Presenta algunas características propias que le diferencian de sus parientes eurasiáticos, es de gran tamaño (solo superado entre los cérvidos por el alce);
-                además, los machos presentan una «melena» más o menos espesa en el cuello y tienen una tonalidad más clara en el cuerpo que en las patas, la cabeza y el cuello.<br><br>
-                Durante un tiempo se les consideró una subespecie de Cervus elaphus, pero hoy se les considera una especie aparte.
-                Constaba de un total de diez subespecies, cuatro de ellas extintas en tiempos recientes debido a la presión humana, aunque recientes estudios de ADN sugieren que no hay más de tres o cuatro subespecies 
-                de uapití y algunas de las formas descritas anteriormente como subespecies no son más que razas.</span>
+                    princip.innerHTML = `  <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/Lobo.mp4" type="video/mp4">
+                    </video>
+                </div>
             
+            <div id="d1">
+                <span id="s1">
+                    <h2>Lobo</h2>
+                    El lobo (Canis lupus) es una especie de mamífero placentario del orden de los carnívoros. El
+                    perro
+                    doméstico (Canis familiaris) se considera miembro de la misma especie según distintos indicios, la
+                    secuencia del ADN y otros estudios genéticos.<br>
+    
+                    Sin embargo, desde 1758 se consideró una especie distinta por el biólogo Carl Linneaus en la décima
+                    edición de Systema naturæ.
+                    El primer registro fósil data de hace ochocientos mil años.
+                    Antaño los lobos fueron abundantes y se distribuían por
+                    Norteamérica y Eurasia. No obstante, por una serie de razones relacionadas con el hombre, los lobos
+                    habitan únicamente en una muy limitada porción del que antes fue su territorio.<br>
+    
+                    Aunque está clasificada como una especie poco amenazada de extinción en algunas regiones, incluyendo la
+                    parte continental de los Estados Unidos de América, la especie está listada como en peligro o amenazada.
+                    Los lobos son cazados en muchas áreas del mundo por la amenaza que representan para el ganado, así como
+                    por deporte.</span>
+            </div>
             
+            </div>
+        </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
+                    
                 case ("loro"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/Pajaro.mp4" type="video/mp4">
-            </video>
-            <h2>Loro rojo</h2>
-            <span >Los loros típicos (Psittacoidea) son una superfamilia del orden Psittaciformes, con un total de 369 especies.
+                    princip.innerHTML = ` <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/Pajaro.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+            <div id="d1">
+                <span id="s1">
+                    <h2>Loro</h2>
+                    Los loros típicos (Psittacoidea) son una superfamilia del orden Psittaciformes, con un total de 369 especies.
                     Los loros típicos son más numerosos y están más extendidos que las otras superfamilias de psitaciformes, 
                     las cacatúas y los escasos y confinados loros de Nueva Zelanda, ya que tienen representantes en América, África, Asia y Oceanía (desde Australia hasta la Polinesia). <br><br>
                     Con anterioridad, los loros típicos se agrupaban en una sola familia (Psittacidae), que se dividía en dos subfamilias: Psittacinae (donde se incluía a todos los loros menos a los loris) y Loriinae (los loris). 
                     Actualmente el grupo se ha reestructurado, pasando a ser una superfamilia que se divide en tres familias:
-                    Psittacidae , Psittrichasiidae  y Psittaculidae 
-                     </span>
+                    Psittacidae , Psittrichasiidae  y Psittaculidae </span>
+            </div>
+            
+            </div>
+        </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
                 case ("ronin"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/Robin.mp4" type="video/mp4">
-            </video>
-            <h2>Petirrojo</h2>
-            <span >El petirrojo europeo(Erithacus rubecula) es una especie de ave paseriforme de la familia Muscicapidae.
+                    princip.innerHTML = ` <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/Robin.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+            <div id="d1">
+                <span id="s1">
+                    <h2>Petirrojo</h2>
+                    El petirrojo europeo(Erithacus rubecula) es una especie de ave paseriforme de la familia Muscicapidae.
                  Está distribuido por toda Europa, principalmente en la región meridional y occidental del continente, donde habita todo el año, y es migrante parcial en el norte de Europa y noroeste de África.<br><br>
                 El petirrojo es un pájaro sociable, atrevido y curioso que acostumbra a salir del bosque y plantarse a mitad de un camino para ver quién llega a su territorio, emitiendo su característica voz de alerta: un chip-chip metálico y seco.
-                 Su canto es un gorjeo musical, muy melódico, parecido al del ruiseñor.</span>
+                 Su canto es un gorjeo musical, muy melódico, parecido al del ruiseñor. </span>
+            </div>
             
-            
+            </div>
+        </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
+
+                    
                 case ("lagarto"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/Drag.mp4" type="video/mp4">
-            </video>
-            <h2>Lagartos</h2>
-            <span >Los lacertilios o lagartos (Lacertilia) son un grupo parafilético de escamosos que incluye la mayoría de los escamosos actuales, como varanos, iguanas, coritofánidos, camaleones, lagartijas y geckos,
+                    princip.innerHTML = ` <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/Drag.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+            <div id="d1">
+                <span id="s1">
+                    <h2>Lagarto</h2>
+                    Los lacertilios o lagartos (Lacertilia) son un grupo parafilético de escamosos que incluye la mayoría de los escamosos actuales, como varanos, iguanas, coritofánidos, camaleones, lagartijas y geckos,
                  así como algunas formas fósiles muy notables, como los mosasaurios del Cretácico Superior.
                  Los lacertilios comprende casi 5000 especies.<br><br>
                 Antes se denominaban saurios (Sauria) al suborden formado por los lacertilios y las serpientes, pero dado que ha resultado ser parafilético, el nombre Sauria se aplica ahora a un clado mayor de reptiles que incluye 
-                la mayoría de los diápsidos. Antiguamente se clasificaban como un suborden independiente de las serpientes y afisbenios que resultó ser parafilético.</span>
+                la mayoría de los diápsidos. Antiguamente se clasificaban como un suborden independiente de las serpientes y afisbenios que resultó ser parafilético. </span>
+            </div>
             
-            
+            </div>
+        </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
                 case ("jirafa"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/jirafa.mp4" type="video/mp4">
-            </video>
-            <h2>Jirafa</h2
-            <span >La jirafa (Giraffa camelopardalis) es una especie de mamífero artiodáctilo, de la familia Giraffidae propio de África.
+                    princip.innerHTML = ` <div class="contvis">
+                <div id="vista1">
+                    <video  width="1500px" height="250px" controls id="princi">
+                        <source src="media/jirafa.mp4" type="video/mp4">
+                    </video>
+                </div>
+            
+            <div id="d1">
+                <span id="s1">
+                    <h2>Jirafa</h2>
+                    La jirafa (Giraffa camelopardalis) es una especie de mamífero artiodáctilo, de la familia Giraffidae propio de África.
                  Es la más alta de todas las especies de animales terrestres existentes, ya que puede alcanzar una altura de 5,8 m y un peso que varía entre 750 y 1600 kg.<br><br>
                 Están adaptadas de forma única para alcanzar una vegetación inaccesible para otros herbívoros. 
                 Sus vasos sanguíneos inusualmente elásticos y las válvulas especialmente adaptadas ayudan a compensar la acumulación repentina de sangre (para evitar desmayos, claramente) cuando las cabezas de las jirafas se levantan, bajan o se balancean rápidamente.</span>
+            </div>
             
-            
+            </div>
+        </div>
             `;
-            window.location.href = '#top'
+                    window.location.href = '#top'
                     break;
-                case ("cisne"):
-                    princip.innerHTML = ` <video id="vista1" width="2000px" height="250px" controls id="princi">
-                <source src="media/Cisnes.mp4" type="video/mp4">
-            </video>
-            <h2>Cisnes</h2>
-            <span >Cisne es el nombre común de varias aves anseriformes de la familia Anatidae. Son aves acuáticas de gran tamaño. La mayoría de las especies pertenecen al género Cygnus.<br><br>
-                 El cisne era un ave consagrada a Apolo, como dios de la música, porque se creía que el cisne poco antes de morir cantaba melodiosamente. Por esto dijo Pitágoras que esta ave se asemejaba a un alma que jamás muere y 
-                    que su canto antes de morir viene de la alegría que experimenta porque va a ser librada de su cuerpo mortal.
-                 Platón parece ser de la misma opinión y algunos otros dicen que está consagrada a Apolo, porque goza del don de prever los bienes de la otra vida de los cuales espera gozar después de su muerte.</span>
-            
-        
-            `;
-                    break;
+               
 
                 default:
                     break;
