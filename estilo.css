@@ -8,11 +8,12 @@ body {
     min-width: 580px;
     background-color: rgba(77, 73, 73, 0.966);
 
-
-
-
 }
-
+a{
+    text-decoration: none;
+    color: white;
+    display:block;
+}
 header {
     display: inline-block;
     position: fixed;
@@ -44,10 +45,9 @@ li {
     vertical-align: middle;
     height: 50px;
     text-align: center;
-    color: white;
     display: table-cell;
     background-color: #D7263D;
-    cursor: pointer
+    cursor: pointer;
 }
 
 li:hover {
@@ -82,9 +82,6 @@ video {
 
 }
 
-section {
-    display: table-row;
-}
 
 h2 {
 
@@ -97,7 +94,7 @@ h2 {
 }
 
 .vista {
-
+    padding-top:30px;
     vertical-align: top;
     width: 45%;
     display: table-cell;
@@ -129,22 +126,16 @@ h4 {
 }
 
 .select {
-   
-    margin: 0;
-    height: auto;
+    border-radius: 10px;
+    background-color: rgba(53, 50, 50, 0.966);
     display: table;
     table-layout: fixed;
-
-
-
 
 }
 
 .imagen {
     text-align: center;
     height: 50%;
-    cursor: pointer;
-    margin: 0;
     padding-right: 15px;
     vertical-align: middle;
     display: table-cell;
@@ -155,7 +146,6 @@ h4 {
     padding-left: 8px;
     padding-right: 8px;
     width: 100%;
-    background-color: rgba(53, 50, 50, 0.966);
     table-layout: fixed;
     display: table-cell;
     vertical-align: middle;
@@ -167,11 +157,9 @@ h4 {
 }
 
 .vprevia {
-
+    cursor: pointer;
     border-radius: 50%;
     box-shadow: 0px 0px 16px 7px rgba(0, 0, 0, 0.75);
-
-
 }
 
 
@@ -180,7 +168,8 @@ h4 {
     transition: ease-in 300ms;
 
 }
-
+/*Media querie a partir de 1200
+pasa el texto debajo de las fotos*/
 @media (max-width: 1200px) {
 
     .vista {
@@ -202,10 +191,12 @@ h4 {
     }
 
     .texto {
+
         height: 30px;
         line-height: 30px;
-        vertical-align: middle;
-        display: table-row
+        display: table-row;
+        text-align: center;
+
     }
 
     li {
@@ -214,7 +205,8 @@ h4 {
     }
 }
 
-
+/*Media querie a partir de 900
+pone texto a la derecha del video y las imagenes debajo*/
 @media (max-width: 900px) {
 
     h2 {
@@ -231,6 +223,12 @@ h4 {
         display: table-cell;
         height: 300px;
     }
+.vista{
+    padding-top:0px;
+}
+    video {
+        min-width: 350px;
+    }
 
     #vista1 {
         width: 600px;
@@ -239,10 +237,11 @@ h4 {
 
     }
 
-    
-.select{
-    padding-right: 20px;
-}
+
+    .select {
+        padding-right: 20px;
+    }
+
     .videos {
         vertical-align: middle;
         display: table-row;
@@ -252,7 +251,8 @@ h4 {
         display: table-cell;
 
     }
-    h4{
+
+    h4 {
         padding-right: 20px;
         text-align: end;
     }
@@ -264,57 +264,80 @@ h4 {
         display: table-cell;
     }
 }
-
+/*Media querie a partir de 600
+Quito el texto de las imagenes , lo paso a table row y lo muevo arriba de la pagina*/
 @media (max-width: 600px) {
     h2 {
-        text-align: justify;
+       
         font-size: 40px;
         line-height: 80px;
     }
-   img{
-    width: 145px;
-    height: 145px;
-   }
-   
-   .select{
-    display:inline;
-   }
+
+    img {
+
+        width: 72px;
+        height: 75px;
+    }
+
+    .select {
+        padding-right: 0px;
+        background-color: rgba(77, 73, 73, 0);
+        display: inline;
+    }
 
     .texto {
-       
-        display: none !important;
-    }
-    h4{
-        display:none;
-    }
-    .vista {
-       padding-bottom: 20px;
+        display: none;
     }
 
+    h4 {
+        display: none;
+    }
+
+    .vista {
+
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .contvis {
+        background-color: rgba(53, 50, 50, 0.966);
+        padding: 10px;
+        height: 800px;
+        border-radius: 10px;
+    }
 
     #d1 {
         font-size: 16px;
         line-height: 20px;
         height: auto;
         display: table-row;
-       
-        
+
+
     }
+
     .videos {
-        vertical-align: middle;
+        position: relative;
+        top: -910px;
+        left: 8px;
+        border-radius: 50px;
         display: table-row;
     }
-    
+
     #vista1 {
         width: 200px;
         display: table-row;
 
     }
-    #wild{
+
+    #wild {
         padding-left: 40px;
-        width: 500px;
-        height: 400px;
+        width: auto;
+        height: auto;
     }
 
+    li {
+        height: 30px;
+        font-size: 15px;
+    }
 
 }
